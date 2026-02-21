@@ -1,0 +1,318 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:
+    'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+    Meiryo, sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* スポットカード */
+.spot-card {
+  background: white;
+  border: 2px solid #333;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.spot-card.with-image {
+  padding: 0;
+}
+
+.spot-card:not(.with-image) {
+  padding: 16px 20px;
+}
+
+.spot-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.spot-content {
+  padding: 16px 20px;
+}
+
+.spot-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.spot-info {
+  font-size: 12px;
+  color: #666;
+  margin-top: 4px;
+}
+
+/* 移動セクション */
+.transport-section {
+  display: flex;
+  padding: 0 0 0 30px;
+}
+
+.timeline-line {
+  width: 3px;
+  background-color: #4a90d9;
+  position: relative;
+}
+
+.transport-details {
+  padding: 15px 0 15px 20px;
+  flex: 1;
+}
+
+.time-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+}
+
+.time-label {
+  font-size: 14px;
+  color: #666;
+  min-width: 40px;
+}
+
+.time-value {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.transport-name {
+  font-size: 15px;
+  color: #4a90d9;
+  font-weight: bold;
+  margin: 15px 0 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.transport-name::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #4a90d9;
+  border-radius: 50%;
+}
+
+.transport-info {
+  font-size: 12px;
+  color: #666;
+  margin-left: 28px;
+}
+
+/* アイコン用のクラス */
+.transport-name.train::before {
+  content: '🚃';
+  background: none;
+}
+
+.transport-name.express::before {
+  content: '🚄';
+  background: none;
+}
+
+.transport-name.bus::before {
+  content: '🚌';
+  background: none;
+}
+
+.transport-name.highwaybus::before {
+  content: '🚍';
+  background: none;
+}
+
+.transport-name.walk::before {
+  content: '🚶';
+  background: none;
+}
+
+.transport-name.car::before {
+  content: '🚗';
+  background: none;
+}
+
+.transport-name.plane::before {
+  content: '✈️';
+  background: none;
+}
+
+.transport-name.ship::before {
+  content: '🚢';
+  background: none;
+}
+
+/* 日付タブ */
+.date-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+}
+
+.date-tab {
+  background: white;
+  border: 2px solid #4a90d9;
+  color: #4a90d9;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-size: 14px;
+}
+
+.date-tab:hover {
+  background: #e8f1fb;
+}
+
+.date-tab.active {
+  background: #4a90d9;
+  color: white;
+}
+
+.date-tab .day-label {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  margin-bottom: 2px;
+}
+
+/* 旅程コンテンツ */
+.itinerary-content {
+  display: none;
+}
+
+.itinerary-content.active {
+  display: block;
+}
+
+/* おすすめ情報（スポット用） */
+.spot-tips {
+  background: #fff8e6;
+  border-left: 3px solid #f5a623;
+  padding: 10px 12px;
+  margin: 8px 20px 16px 20px;
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+}
+
+.spot-tips-title {
+  font-weight: bold;
+  color: #f5a623;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.spot-tips-title::before {
+  content: '💡';
+}
+
+.spot-tips-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.spot-tips-item.souvenir::before {
+  content: '🎁';
+}
+
+.spot-tips-item.lunch::before {
+  content: '🍽️';
+}
+
+.spot-tips-item.cafe::before {
+  content: '☕';
+}
+
+.spot-tips-item.photo::before {
+  content: '📸';
+}
+
+.spot-tips-item.note::before {
+  content: '📝';
+}
+
+/* おすすめ情報（移動用） */
+.transport-tips {
+  background: #e8f4fd;
+  border-left: 3px solid #4a90d9;
+  padding: 10px 12px;
+  margin: 8px 0;
+  margin-left: 28px;
+  border-radius: 0 6px 6px 0;
+  font-size: 12px;
+}
+
+.transport-tips-title {
+  font-weight: bold;
+  color: #4a90d9;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.transport-tips-title::before {
+  content: '✨';
+}
+
+.transport-tips-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  margin: 4px 0;
+  color: #555;
+}
+
+.transport-tips-item.view::before {
+  content: '🪟';
+}
+
+.transport-tips-item.sales::before {
+  content: '🛒';
+}
+
+.transport-tips-item.seat::before {
+  content: '💺';
+}
+
+.transport-tips-item.wifi::before {
+  content: '📶';
+}
+
+.transport-tips-item.note::before {
+  content: '📝';
+}
