@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>旅程表</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>🗺️ 旅程表</h1>
+
+      <!-- 日付タブ -->
+      <div class="date-tabs">
+        <button class="date-tab active" onclick="showDay(1)">
+          <span class="day-label">DAY 1</span>
+          2/27（金）
+        </button>
+        <button class="date-tab" onclick="showDay(2)">
+          <span class="day-label">DAY 2</span>
+          2/28（土）
+        </button>
+      </div>
+
+      <!-- DAY 1 -->
+      <div id="day1" class="itinerary-content active">
+        <!-- スポット1 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">横浜駅</div>
+            <div class="spot-info">11:10に京急の北改札集合</div>
+          </div>
+        </div>
+
+        <!-- 移動1 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">11:13</span>
+            </div>
+            <div class="transport-name train">京浜急行 特急 三崎口行き</div>
+            <div class="transport-info">
+              運賃: 490円<br />所要時間: 36分<br />交通系ICカード利用可
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">11:49</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット2 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">京急久里浜駅</div>
+            <div class="spot-info">乗り換え時間: 約6分</div>
+          </div>
+        </div>
+
+        <!-- 移動2 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">11:55</span>
+            </div>
+            <div class="transport-name bus">
+              京急バス 久7系統 東京湾フェリー行き
+            </div>
+            <div class="transport-info">
+              運賃: 240円<br />所要時間: 10分<br />交通系ICカード利用可
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">12:05</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット3 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">久里浜港</div>
+            <div class="spot-info">乗り換え時間: 約10分</div>
+          </div>
+        </div>
+
+        <!-- 移動3 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">12:15</span>
+            </div>
+            <img
+              src="https://maruchiba.jp/lsc/upfile/article/0000/0199/199_1_l.jpg"
+              alt="東京湾フェリー"
+              class="spot-image"
+            />
+            <div class="transport-name ship">東京湾フェリー 金谷港行き</div>
+            <div class="transport-info">
+              運賃: 1,100円(障割: 550円)<br />所要時間: 40分
+            </div>
+            <div class="transport-tips">
+              <div class="transport-tips-title">乗船のポイント</div>
+              <div class="transport-tips-item view">
+                進行方向右側で富士山が見える
+              </div>
+              <div class="transport-tips-item sales">
+                船内売店のいわしバーグが人気
+              </div>
+              <div class="transport-tips-item seat">
+                デッキがおすすめ（天候次第）
+              </div>
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">12:55</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット4 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">金谷港</div>
+          </div>
+        </div>
+
+        <!-- 移動4 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">12:55</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">13:00</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット5 -->
+        <div class="spot-card with-image">
+          <img
+            src=" https://maruchiba.jp/lsc/upfile/spot/0001/0329/10329_5_l.jpg"
+            alt="金谷市街地"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">金谷市街地</div>
+            <div class="spot-info">滞在時間: 約1時間</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item lunch">
+              「黄金アジ」を使ったフライや寿司を遅めのランチに
+            </div>
+            <div class="spot-tips-item souvenir">
+              金谷名物のびわソフトクリーム
+            </div>
+            <div class="spot-tips-item photo">
+              フェリーと富士山が見える撮影スポット
+            </div>
+          </div>
+        </div>
+
+        <!-- 移動5 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">14:00</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 15分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">14:15</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット6 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">鋸山山麓駅</div>
+          </div>
+        </div>
+
+        <!-- 移動6 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">14:15</span>
+            </div>
+            <img
+              src="https://maruchiba.jp/lsc/upfile/spot/0001/0330/10330_2_l.jpg"
+              alt="鋸山ロープウェイ"
+              class="spot-image"
+            />
+            <div class="transport-name walk">
+              鋸山ロープウェイ 鋸山山頂駅行き
+            </div>
+            <div class="transport-info">
+              運賃: 650円(障割: 320円)<br />所要時間: 4分
+            </div>
+            <div class="transport-tips">
+              <div class="transport-tips-title">乗車のポイント</div>
+              <div class="transport-tips-item view">
+                東京湾と鋸山の絶景が楽しめる
+              </div>
+              <div class="transport-tips-item seat">
+                進行方向左側が海側でおすすめ
+              </div>
+              <div class="transport-tips-item note">15分間隔で運行</div>
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">14:19</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット7 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">鋸山山頂駅</div>
+          </div>
+        </div>
+
+        <!-- 移動7 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">14:19</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">14:24</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット8 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://maruchiba.jp/lsc/upfile/spot/0001/0364/10364_1_l.jpg"
+            alt="日本寺"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">日本寺</div>
+            <div class="spot-info">滞在時間: 約1時間30分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item photo">地獄のぞきからの絶景は必見！</div>
+            <div class="spot-tips-item note">階段が多いので歩きやすい靴で</div>
+          </div>
+        </div>
+
+        <!-- 移動8 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">15:54</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 35分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">16:29</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット9 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">保田駅</div>
+          </div>
+        </div>
+
+        <!-- 移動9 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">16:29</span>
+            </div>
+            <img
+              src="https://www.toretabi.jp/media/007/202006/d5414953206521bd00eb7c1bb1835cf8.jpg"
+              alt="内房線"
+              class="spot-image"
+            />
+            <div class="transport-name train">内房線 普通 上総一ノ宮行き</div>
+            <div class="transport-info">
+              運賃: 330円<br />所要時間: 23分<br />交通系ICカード利用可
+            </div>
+            <div class="transport-tips">
+              <div class="transport-tips-title">車窓の見どころ</div>
+              <div class="transport-tips-item view">
+                進行方向左側で東京湾が見える
+              </div>
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">16:52</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット10 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">館山駅</div>
+            <div class="spot-info">乗り換え時間: 約8分</div>
+          </div>
+        </div>
+
+        <!-- 移動10 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">17:00</span>
+            </div>
+            <div class="transport-name bus">
+              送迎バス トスラブ館山ルアーナ行き
+            </div>
+            <div class="transport-info">所要時間: 20分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">17:20</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット11 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://sail-to.co.jp/wp-content/uploads/2024/05/402079_0-810x540.jpg"
+            alt="トスラブ館山ルアーナ"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">トスラブ館山ルアーナ</div>
+            <div class="spot-info">本日の宿泊先</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item cafe">
+              ロビーでウェルカムドリンクあり
+            </div>
+            <div class="spot-tips-item photo">
+              屋上テラスからの海の景色が絶景
+            </div>
+            <div class="spot-tips-item note">
+              日没は17:30頃、テラスやロビーから夕日が楽しめる
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End DAY 1 -->
+
+      <!-- DAY 2-->
+      <div id="day2" class="itinerary-content">
+        <!-- スポット1 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">トスラブ館山ルアーナ</div>
+          </div>
+        </div>
+
+        <!-- 移動1 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">11:15</span>
+            </div>
+            <div class="transport-name bus">送迎バス 館山駅西口行き</div>
+            <div class="transport-info">所要時間: 20分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">11:35</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット2 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">🚏 館山駅西口</div>
+            <div class="spot-info">乗り換え時間: 約10分</div>
+          </div>
+        </div>
+
+        <!-- 移動2 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">11:45</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 35分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">12:20</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット3 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://maruchiba.jp/lsc/upfile/spot/0001/0406/10406_1_l.jpg"
+            alt="潮風王国"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">道の駅 ちくら潮風王国</div>
+            <div class="spot-info">滞在時間: 約45分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item lunch">新鮮な海鮮丼が人気！</div>
+            <div class="spot-tips-item souvenir">
+              千葉県産のひじきがおすすめ
+            </div>
+            <div class="spot-tips-item photo">漁船の展示がフォトジェニック</div>
+          </div>
+        </div>
+
+        <!-- 移動3 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">13:05</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">13:10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット4 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://shiokaze-oukoku.jp/wp-content/uploads/2013/11/%E7%99%BD%E9%96%93%E6%B4%A5%E5%8D%B3%E5%A3%B2%E6%89%80.jpg"
+            alt="白間津お花畑"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">白間津お花畑</div>
+            <div class="spot-info">滞在時間: 約30分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item photo">2月は菜の花が見頃！</div>
+            <div class="spot-tips-item souvenir">切り花の販売もあり</div>
+          </div>
+        </div>
+
+        <!-- 移動4 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">13:40</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 10分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">13:50</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット5 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://maruchiba.jp/lsc/upfile/spot/0001/0408/10408_1_l.jpg"
+            alt="野島埼灯台"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">野島埼灯台</div>
+            <div class="spot-info">滞在時間: 約30分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item photo">房総半島最南端からの絶景</div>
+            <div class="spot-tips-item note">灯台に登れます（有料300円）</div>
+          </div>
+        </div>
+
+        <!-- 移動5 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">14:20</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 20分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">14:40</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット6 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://hanaumikaidou.com/wp-content/uploads/2016/02/awajinjya.jpg"
+            alt="安房神社"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">安房神社</div>
+            <div class="spot-info">滞在時間: 約30分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item photo">神聖な雰囲気の参道が美しい</div>
+            <div class="spot-tips-item note">
+              金運・商売繁盛のパワースポット
+            </div>
+          </div>
+        </div>
+
+        <!-- 移動6 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">15:10</span>
+            </div>
+            <img
+              src="https://maruchiba.jp/lsc/upfile/course/0000/0055/55_1_l.jpg"
+              alt="安房神社から須崎神社への道(房総フラワーライン)"
+              class="spot-image"
+            />
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 20分</div>
+            <div class="transport-tips">
+              <div class="transport-tips-title">ドライブのポイント</div>
+              <div class="transport-tips-item view">
+                房総フラワーラインは菜の花が綺麗！
+              </div>
+              <div class="transport-tips-item photo">
+                海沿いの絶景ドライブコース
+              </div>
+              <div class="transport-tips-item note">道が空いていれば快適</div>
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">15:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット7 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://maruchiba.jp/lsc/upfile/spot/0001/2056/12056_4_l.jpg"
+            alt="須崎神社"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">洲崎神社</div>
+            <div class="spot-info">滞在時間: 約30分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item photo">海を渡る鳥居がフォトスポット</div>
+            <div class="spot-tips-item note">階段が急なので注意</div>
+          </div>
+        </div>
+
+        <!-- 移動7 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">16:00</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 20分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">16:20</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット8 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://maruchiba.jp/lsc/upfile/spot/0001/0426/10426_3_l.jpg"
+            alt="沖ノ島ビジターセンター"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">沖ノ島</div>
+            <div class="spot-info">滞在時間: 約60分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">おすすめ情報</div>
+            <div class="spot-tips-item photo">無人島を歩いて探検できる！</div>
+            <div class="spot-tips-item note">潮が引いている時がおすすめ</div>
+            <div class="spot-tips-item note">サンゴの化石が見られることも</div>
+          </div>
+        </div>
+
+        <!-- 移動8 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">17:10</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 15分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">17:25</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット9 -->
+        <div class="spot-card with-image">
+          <img
+            src="https://prod-public-connect-assets.s3.ap-northeast-1.amazonaws.com/2025/blog/82f7c741-8226-455c-a107-274376973984_default.webp"
+            alt="館山市街地"
+            class="spot-image"
+          />
+          <div class="spot-content">
+            <div class="spot-name">館山市街地</div>
+            <div class="spot-info">滞在時間: 約45分</div>
+          </div>
+          <div class="spot-tips">
+            <div class="spot-tips-title">夕食はテイクアウトで！</div>
+            <div class="spot-tips-item lunch">
+              ご当地スーパー「おどや」で地元グルメを楽しむ
+            </div>
+            <div class="spot-tips-item lunch">
+              ご当地回転寿司「やまと寿司」で地魚握りをテイクアウト
+            </div>
+            <div class="spot-tips-item lunch">
+              館山駅前の「喫茶マリン」で幻の駅弁、くじら弁当をGET
+            </div>
+          </div>
+        </div>
+
+        <!-- 移動9 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:10</span>
+            </div>
+            <div class="transport-name car">タイムズカー</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">18:15</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット10 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">館山駅</div>
+            <div class="spot-info">乗り換え時間: 約15分</div>
+          </div>
+        </div>
+
+        <!-- 移動10 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:30</span>
+            </div>
+            <div class="transport-name highwaybus">
+              JRバス関東 新宿なのはな26号
+            </div>
+            <div class="transport-info">所要時間: 2時間2分</div>
+            <div class="transport-tips">
+              <div class="transport-tips-title">バスの情報</div>
+              <div class="transport-tips-item note">トイレ&電源付き</div>
+              <div class="transport-tips-item note">
+                テーブル未装備の可能性あり
+              </div>
+              <div class="transport-tips-item note">
+                アクアライン経由のため渋滞による遅延の可能性あり
+              </div>
+            </div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">20:32</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット11 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">バスタ新宿</div>
+          </div>
+        </div>
+      </div>
+      <!-- End DAY 2 -->
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
