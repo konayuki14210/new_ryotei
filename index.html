@@ -10,171 +10,224 @@
     <div class="container">
       <h1>🗺️ 旅程表</h1>
 
+      <!-- 日付タブ -->
       <div class="date-tabs">
         <button class="date-tab active" onclick="showDay(1)">
           <span class="day-label">DAY 1</span>
-          2/22（日）
+          新潟・弥彦
+        </button>
+        <button class="date-tab" onclick="showDay(2)">
+          <span class="day-label">DAY 2</span>
+          酒田・新庄
         </button>
       </div>
 
+      <!-- DAY 1 -->
       <div id="day1" class="itinerary-content active">
+        <!-- スポット1 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">曙橋駅</div>
-            <div class="spot-info">11:50に防衛省方面改札集合</br>A3出口へ</div>
+            <div class="spot-name">上野駅</div>
           </div>
         </div>
 
+        <!-- 移動1 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">11:50</span>
+              <span class="time-value">08:28</span>
+            </div>
+            <div class="transport-name train">とき307号 新潟行き</div>
+            <div class="transport-info">所要時間: 1時間41分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">10:09</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット2 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">燕三条駅</div>
+          </div>
+        </div>
+
+        <!-- 移動2 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">10:30</span>
             </div>
             <div class="transport-name walk">徒歩</div>
             <div class="transport-info">所要時間: 10分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">12:00</span>
+              <span class="time-value">10:40</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット3 -->
         <div class="spot-card with-image">
-          <img
-            src="https://www.its-kenpo.or.jp/images/fuzoku/restaurant/alfaro/alfaro_01.jpg"
-            alt="リストランテ「アル・ファーロ」"
-            class="spot-image"
-          />
           <div class="spot-content">
-            <div class="spot-name">リストランテ「アル・ファーロ」</div>
-            <div class="spot-info">滞在時間: 約2時間</div>
-          </div>
-          <div class="spot-tips">
-            <div class="spot-tips-title">ランチ情報</div>
-            <div class="spot-tips-item lunch">「冬の味覚コース」を楽しむ</div>
-            <div class="spot-tips-item lunch">
-              メニューは<a href="https://www.its-kenpo.or.jp/fuzoku/restaurant/alfaro/menu/mikaku.html">こちら</a>
-            </div>
+            <div class="spot-name">回転寿司鼓響 燕三条店</div>
+            <div class="spot-info">滞在時間: 約1時間（食事）</div>
           </div>
         </div>
 
+        <!-- 移動3 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">14:04</span>
+              <span class="time-value">11:40</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 15分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">11:55</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット4 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">燕三条地場産業振興センター</div>
+            <div class="spot-info">滞在時間: 約1時間（観光）</div>
+          </div>
+        </div>
+
+        <!-- 移動4 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">13:06</span>
             </div>
             <div class="transport-name walk">徒歩</div>
             <div class="transport-info">所要時間: 10分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">14:14</span>
+              <span class="time-value">13:16</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット5 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">牛込柳町駅</div>
+            <div class="spot-name">燕三条駅</div>
           </div>
         </div>
 
+        <!-- 移動5 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">14:14</span>
+              <span class="time-value">13:16</span>
             </div>
-            <div class="transport-name train">
-              都営地下鉄大江戸線 普通 飯田橋・大門方面行き
-            </div>
-            <div class="transport-info">所要時間: 8分</div>
+            <div class="transport-name train">弥彦線 普通 弥彦行き</div>
+            <div class="transport-info">所要時間: 30分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">14:22</span>
+              <span class="time-value">13:46</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット6 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">本郷三丁目駅</div>
-            <div class="spot-info">5番出口へ</div>
+            <div class="spot-name">弥彦駅</div>
           </div>
         </div>
 
+        <!-- 移動6 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">14:22</span>
+              <span class="time-value">13:46</span>
             </div>
             <div class="transport-name walk">徒歩</div>
-            <div class="transport-info">所要時間: 18分</div>
+            <div class="transport-info">所要時間: 15分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">14:40</span>
+              <span class="time-value">14:01</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット7 -->
         <div class="spot-card with-image">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Tsumakoi-jinjya-1.jpg"
-            alt="妻戀神社"
-            class="spot-image"
-          />
           <div class="spot-content">
-            <div class="spot-name">妻戀神社</div>
-            <div class="spot-info">滞在時間: 約20分</div>
-          </div>
-          <div class="spot-tips">
-            <div class="spot-tips-title">おすすめ情報</div>
-            <div class="spot-tips-item souvenir">
-              2/22「猫の日」限定御朱印をGET
-            </div>
+            <div class="spot-name">弥彦神社</div>
+            <div class="spot-info">滞在時間: 約1時間（観光）</div>
           </div>
         </div>
 
+        <!-- 移動7 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">15:00</span>
+              <span class="time-value">14:05</span>
             </div>
-            <div class="transport-name walk">徒歩</div>
-            <div class="transport-info">所要時間: 10分</div>
+            <div class="transport-name bus">弥彦山ロープウェイ送迎バス</div>
+            <div class="transport-info">所要時間: 5分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">15:10</span>
+              <span class="time-value">14:10</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット8 -->
         <div class="spot-card with-image">
-          <img
-            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/05/6e/d5/plum-blossom.jpg?w=900&h=500&s=1"
-            alt="湯島天満宮"
-            class="spot-image"
-          />
           <div class="spot-content">
-            <div class="spot-name">湯島天満宮</div>
-            <div class="spot-info">滞在時間: 約50分</div>
+            <div class="spot-name">山麓駅</div>
           </div>
-          <div class="spot-tips">
-            <div class="spot-tips-title">おすすめ情報</div>
-            <div class="spot-tips-item photo">
-              境内の梅が見頃（2月下旬～3月上旬）
+        </div>
+
+        <!-- 移動8 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">14:15</span>
+            </div>
+            <div class="transport-name walk">弥彦山ロープウェイ 上り</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">14:20</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット9 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">山頂駅</div>
+            <div class="spot-info">滞在時間: 約1時間30分（観光）</div>
+          </div>
+        </div>
+
+        <!-- 移動9 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
@@ -182,242 +235,598 @@
               <span class="time-label">出発</span>
               <span class="time-value">16:00</span>
             </div>
-            <div class="transport-name walk">徒歩</div>
-            <div class="transport-info">所要時間: 3分</div>
+            <div class="transport-name walk">弥彦山ロープウェイ 下り</div>
+            <div class="transport-info">所要時間: 5分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">16:03</span>
+              <span class="time-value">16:05</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット10 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">🚏湯島三丁目</div>
+            <div class="spot-name">山麓駅</div>
           </div>
         </div>
 
+        <!-- 移動10 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">16:03</span>
+              <span class="time-value">16:10</span>
             </div>
-            <div class="transport-name bus">
-              都営バス 都02系統 錦糸町駅行き
-            </div>
-            <div class="transport-info">所要時間: 28分</div>
+            <div class="transport-name bus">弥彦山ロープウェイ送迎バス</div>
+            <div class="transport-info">所要時間: 5分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">16:31</span>
+              <span class="time-value">16:15</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット11 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">🚏大平三丁目</div>
+            <div class="spot-name">弥彦神社</div>
           </div>
         </div>
 
+        <!-- 移動11 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">16:31</span>
-            </div>
-            <div class="transport-name walk">徒歩</div>
-            <div class="transport-info">所要時間: 9分</div>
-            <div class="time-info">
-              <span class="time-label">到着</span>
-              <span class="time-value">16:40</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="spot-card with-image">
-          <img
-            src="https://de5c3ya1fcot1.cloudfront.net/uploads/cover_image/image/6521/small_normal_pixta_97954735_M.jpg"
-            alt="亀戸天神社"
-            class="spot-image"
-          />
-          <div class="spot-content">
-            <div class="spot-name">亀戸天神社</div>
-            <div class="spot-info">滞在時間: 約45分</div>
-          </div>
-          <div class="spot-tips">
-            <div class="spot-tips-title">おすすめ情報</div>
-            <div class="spot-tips-item photo">
-              こちらも梅が見頃（2月下旬～3月上旬）
-            </div>
-            <div class="spot-tips-item souvenir">
-              「梅まつり」限定御朱印をGET
-            </div>
-          </div>
-        </div>
-
-        <div class="transport-section">
-          <div class="timeline-line"></div>
-          <div class="transport-details">
-            <div class="time-info">
-              <span class="time-label">出発</span>
-              <span class="time-value">17:25</span>
+              <span class="time-value">16:15</span>
             </div>
             <div class="transport-name walk">徒歩</div>
-            <div class="transport-info">所要時間: 4分</div>
+            <div class="transport-info">所要時間: 15分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">17:29</span>
+              <span class="time-value">16:30</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット12 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">🚏亀戸天神前</div>
+            <div class="spot-name">弥彦公園</div>
+            <div class="spot-info">滞在時間: 約45分（観光）</div>
           </div>
         </div>
 
+        <!-- 移動12 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">17:29</span>
-            </div>
-            <div class="transport-name bus">都営バス 草24系統 浅草寿町行き</div>
-            <div class="transport-info">所要時間: 23分</div>
-            <div class="time-info">
-              <span class="time-label">到着</span>
-              <span class="time-value">17:52</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="spot-card with-image">
-          <div class="spot-content">
-            <div class="spot-name">🚏浅草寿町</div>
-          </div>
-        </div>
-
-        <div class="transport-section">
-          <div class="timeline-line"></div>
-          <div class="transport-details">
-            <div class="time-info">
-              <span class="time-label">出発</span>
-              <span class="time-value">17:52</span>
-            </div>
-            <div class="transport-name walk">徒歩</div>
-            <div class="transport-info">所要時間: 8分</div>
-            <div class="time-info">
-              <span class="time-label">到着</span>
-              <span class="time-value">18:00</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="spot-card with-image">
-          <img
-            src="https://takeo.tokyo/note/img/menu/tagame_1.jpg"
-            alt="昆虫食TAKEO本店"
-            class="spot-image"
-          />
-          <div class="spot-content">
-            <div class="spot-name">昆虫食TAKEO本店</div>
-            <div class="spot-info">滞在時間: 約30分</div>
-          </div>
-          <div class="spot-tips">
-            <div class="spot-tips-title">おすすめ情報</div>
-            <div class="spot-tips-item lunch">
-              恐怖！タガメサイダー！(青リンゴっぽい味がします)
-            </div>
-          </div>
-        </div>
-
-        <div class="transport-section">
-          <div class="timeline-line"></div>
-          <div class="transport-details">
-            <div class="time-info">
-              <span class="time-label">出発</span>
-              <span class="time-value">18:30</span>
+              <span class="time-value">17:16</span>
             </div>
             <div class="transport-name walk">徒歩</div>
             <div class="transport-info">所要時間: 5分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">18:35</span>
+              <span class="time-value">17:21</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット13 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">田原町駅</div>
+            <div class="spot-name">弥彦駅</div>
           </div>
         </div>
 
+        <!-- 移動13 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">18:35</span>
+              <span class="time-value">17:21</span>
             </div>
-            <div class="transport-name train">東京メトロ 銀座線 渋谷行き</div>
+            <div class="transport-name train">弥彦線 普通 吉田行き</div>
+            <div class="transport-info">所要時間: 9分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">17:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット14 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">吉田駅</div>
+            <div class="spot-info">乗り換え時間: 約9分</div>
+          </div>
+        </div>
+
+        <!-- 移動14 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">17:39</span>
+            </div>
+            <div class="transport-name train">越後線 普通 新潟行き</div>
+            <div class="transport-info">所要時間: 30分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">18:09</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット15 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">内野駅</div>
+          </div>
+        </div>
+
+        <!-- 移動15 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:09</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">18:14</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット16 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">スーパーいちまん</div>
+            <div class="spot-info">滞在時間: 約30分（買い物）</div>
+          </div>
+        </div>
+
+        <!-- 移動16 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:48</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">18:53</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット17 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">内野駅</div>
+          </div>
+        </div>
+
+        <!-- 移動17 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:53</span>
+            </div>
+            <div class="transport-name train">越後線 普通 新潟行き</div>
+            <div class="transport-info">所要時間: 26分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">19:19</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット18 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">新潟駅</div>
+          </div>
+        </div>
+
+        <!-- 移動18 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">19:19</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
             <div class="transport-info">所要時間: 6分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">18:41</span>
+              <span class="time-value">19:25</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット19 -->
         <div class="spot-card with-image">
-          <img
-            src="https://www.andtrip.jp/images/974c245dc34cc158e8befa8d4969f5347d795d32.jpg"
-            alt="秋葉原電気街"
-            class="spot-image"
-          />
           <div class="spot-content">
-            <div class="spot-name">秋葉原電気街</div>
-            <div class="spot-info">滞在時間: 約90分</div>
+            <div class="spot-name">ジュラクステイ新潟</div>
+            <div class="spot-info">本日の宿泊先</div>
           </div>
-          <div class="spot-tips">
-            <div class="spot-tips-title">おすすめ情報</div>
-            <div class="spot-tips-item souvenir">
-              amiboカードを手に入れよう
-            </div>
-            <div class="spot-tips-item lunch">
-              テキトーに夕飯、上野に行ってもいいかも(みはしとか)
-            </div>
+        </div>
+      </div>
+      <!-- End DAY 1 -->
+
+      <!-- DAY 2-->
+      <div id="day2" class="itinerary-content">
+        <!-- スポット1 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">ジュラクステイ新潟</div>
           </div>
         </div>
 
+        <!-- 移動1 -->
         <div class="transport-section">
           <div class="timeline-line"></div>
           <div class="transport-details">
             <div class="time-info">
               <span class="time-label">出発</span>
-              <span class="time-value">20:20</span>
+              <span class="time-value">10:05</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 6分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">10:11</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット2 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">新潟駅</div>
+          </div>
+        </div>
+
+        <!-- 移動2 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">10:11</span>
+            </div>
+            <div class="transport-name train">海里 酒田行き</div>
+            <div class="transport-info">所要時間: 1時間18分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">11:29</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット3 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">桑川駅</div>
+            <div class="spot-info">滞在時間: 約20分（観光）</div>
+          </div>
+        </div>
+
+        <!-- 移動3 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">12:06</span>
+            </div>
+            <div class="transport-name train">海里 酒田行き</div>
+            <div class="transport-info">所要時間: 1時間30分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">13:36</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット4 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">酒田駅</div>
+          </div>
+        </div>
+
+        <!-- 移動4 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">13:36</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 4分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">13:40</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット5 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">酒田駅前観光案内所</div>
+            <div class="spot-info">滞在時間: 約10分（自転車レンタル）</div>
+          </div>
+        </div>
+
+        <!-- 移動5 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">13:50</span>
+            </div>
+            <div class="transport-name bicycle">自転車</div>
+            <div class="transport-info">所要時間: 15分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">14:05</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット6 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">日和山公園</div>
+            <div class="spot-info">滞在時間: 約1時間（観光）</div>
+          </div>
+        </div>
+
+        <!-- 移動6 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">15:05</span>
+            </div>
+            <div class="transport-name bicycle">自転車</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">15:10</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット7 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">さかた海鮮市場</div>
+            <div class="spot-info">滞在時間: 約30分（観光）</div>
+          </div>
+        </div>
+
+        <!-- 移動7 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">15:40</span>
+            </div>
+            <div class="transport-name bicycle">自転車</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">15:45</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット8 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">山居倉庫</div>
+            <div class="spot-info">滞在時間: 約15分（観光）</div>
+          </div>
+        </div>
+
+        <!-- 移動8 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">16:00</span>
+            </div>
+            <div class="transport-name bicycle">自転車</div>
+            <div class="transport-info">所要時間: 5分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">16:05</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット9 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">いろは蔵パーク</div>
+            <div class="spot-info">滞在時間: 約15分（買い物）</div>
+          </div>
+        </div>
+
+        <!-- 移動9 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">16:20</span>
+            </div>
+            <div class="transport-name car">自転車</div>
+            <div class="transport-info">所要時間: 10分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">16:30</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット10 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">酒田駅前観光案内所</div>
+            <div class="spot-info">滞在時間: 約10分（自転車返却）</div>
+          </div>
+        </div>
+
+        <!-- 移動10 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">16:40</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 4分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">16:44</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット11 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">酒田駅</div>
+          </div>
+        </div>
+
+        <!-- 移動11 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">16:44</span>
+            </div>
+            <div class="transport-name train">陸羽西線 普通 新庄行き</div>
+            <div class="transport-info">所要時間: 1時間9分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">17:53</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット12 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">新庄駅</div>
+          </div>
+        </div>
+
+        <!-- 移動12 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">17:53</span>
             </div>
             <div class="transport-name walk">徒歩</div>
             <div class="transport-info">所要時間: 10分</div>
             <div class="time-info">
               <span class="time-label">到着</span>
-              <span class="time-value">20:30</span>
+              <span class="time-value">18:03</span>
             </div>
           </div>
         </div>
 
+        <!-- スポット13 -->
         <div class="spot-card with-image">
           <div class="spot-content">
-            <div class="spot-name">秋葉原駅</div>
-            <div class="spot-info">解散</div>
+            <div class="spot-name">新旬屋 本店</div>
+            <div class="spot-info">滞在時間: 約30分（食事）</div>
+          </div>
+        </div>
+
+        <!-- 移動13 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:33</span>
+            </div>
+            <div class="transport-name walk">徒歩</div>
+            <div class="transport-info">所要時間: 10分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">18:43</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット14 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">新庄駅</div>
+          </div>
+        </div>
+
+        <!-- 移動14 -->
+        <div class="transport-section">
+          <div class="timeline-line"></div>
+          <div class="transport-details">
+            <div class="time-info">
+              <span class="time-label">出発</span>
+              <span class="time-value">18:43</span>
+            </div>
+            <div class="transport-name train">つばさ158号 東京行き</div>
+            <div class="transport-info">所要時間: 3時間35分</div>
+            <div class="time-info">
+              <span class="time-label">到着</span>
+              <span class="time-value">22:18</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- スポット15 -->
+        <div class="spot-card with-image">
+          <div class="spot-content">
+            <div class="spot-name">上野駅</div>
           </div>
         </div>
       </div>
+      <!-- End DAY 2 -->
     </div>
 
     <script src="script.js"></script>
